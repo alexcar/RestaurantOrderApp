@@ -18,7 +18,7 @@ Prepare the frontend to test the App Restaurant Order Web
 1. Start Visual Studio Code.
 2. Open the application folder in the path:<br> 
 `code\RestaurantOrderApp\src\frontend`
-3. Right-click the RestaurantOrderWeb folder and select Open with Code.
+3. Right-click the `RestaurantOrderWeb` folder and select Open with Code.
 4. Open a new terminal in Visual Studio Code.
 5. Update packages by typing the command in the terminal:<br> 
 `npm i`
