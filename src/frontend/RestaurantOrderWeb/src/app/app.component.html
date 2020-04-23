@@ -1,0 +1,62 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+      <div class="card" style="margin-top: 30px;">
+        <div class="card-header">
+          Restaurant Order
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Order</h5>
+          <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+            <div class="form-group">
+              <label for="orderRequest">Order Request</label>
+              <input type="text" class="form-control" id="orderRequest" formControlName="orderRequest">
+              <div *ngIf="form.get('orderRequest').invalid &&
+                        (form.get('orderRequest').dirty || form.get('orderRequest').touched)"
+                        class="invalid-feedback">
+                        <div *ngIf="form.get('orderRequest').errors?.required || 
+                                    form.get('orderRequest').errors?.orderRequestValidator">Please enter a valid order request</div>
+                    </div>
+            </div>
+            <div class="form-group">
+              <label for="outputMessage">Output</label>
+              <input type="text" class="form-control" formControlName="outputMessage" id="outputMessage" readonly>
+            </div>            
+            <button type="submit" [disabled]="form.invalid" class="btn btn-primary" style="margin-right: 10px;">Send Order</button>
+          </form>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="col-sm"></div>
+    
+  </div>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <table class="table table-bordered" *ngIf="orderHistory.length > 0" style="margin-top: 30px;">
+        <thead>
+          <tr>
+            <th scope="col">Input</th>
+            <th scope="col">Output</th>
+            <th scope="col">Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orderHistory">
+            <td>{{ order.input }}</td>
+            <td>{{ order.output }}</td>
+            <td>{{ order.message }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>

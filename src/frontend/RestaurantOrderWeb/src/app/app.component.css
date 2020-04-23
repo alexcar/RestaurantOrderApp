@@ -1,0 +1,13 @@
+#orderRequest.ng-valid {
+    border-left: 5px solid green;
+}
+
+#orderRequest.ng-invalid.ng-dirty,
+#orderRequest.ng-invalid.ng-touched {
+    border-left: 5px solid red;
+}
+
+#orderRequest.ng-valid ~ .valid-feedback,
+#orderRequest.ng-invalid ~ .invalid-feedback {
+    display: block;
+}
