@@ -19,6 +19,7 @@ Prepare the backend to test the App Restaurant Order Web
 2. Open the solution file in the path:<br> 
 `code\RestaurantOrderApp\src\backend`
 3. Start the application by pressing F5.
+4. Proceed with the preparation of the frontend project.
 
 
 
