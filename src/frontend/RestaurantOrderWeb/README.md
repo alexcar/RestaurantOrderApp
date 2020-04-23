@@ -1,27 +1,31 @@
-# RestaurantOrderWeb
+# Application Restaurant Order Web
+Application to manage restaurant orders
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+### Installation Instruction
 
-## Development server
+### Goal
+Prepare the frontend to test the application Restaurant Order Web
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Cloning the repository
+1. Open the terminal and create a directory named "code" for example.<br>
+`mkdir code` 
 
-## Code scaffolding
+2. From the created directory, clone the project.<br>
+`cd code`<br>
+`git clone https://github.com/alexcar/AppCadastroWeb.git`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Preparing the FrontEnd project
+1. Start Visual Studio Code.
+2. Open the application folder in the path:<br> 
+`code\AppCadastroWeb`
+3. Right-click the AppCadastroWeb folder and select Open with Code.
+4. Open a new terminal in Visual Studio Code.
+5. Update packages by typing the command in the terminal:<br> 
+`npm i`
+6. Run the application by typing the command:<br> 
+`ng serve`
+6. Open the browser at the address:<br> 
+`http://localhost:4200`
+7. Then place the orders.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
