@@ -12,7 +12,7 @@ Prepare the frontend to test the application Restaurant Order Web
 
 2. From the created directory, clone the project.<br>
 `cd code`<br>
-`git clone https://github.com/alexcar/AppCadastroWeb.git`
+`git clone https://github.com/alexcar/RestaurantOrderApp.git`
 
 ### Preparing the FrontEnd project
 1. Start Visual Studio Code.
