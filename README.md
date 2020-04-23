@@ -14,7 +14,7 @@ Prepare the backend to test the App Restaurant Order Web
 `cd code`<br>
 `git clone https://github.com/alexcar/AppCadastroWeb.git`
 
-### Preparing the FrontEnd Project
+### Preparing the Backend Project
 1. Start Visual Studio 2019.
 2. Open the solution file in the path:<br> 
 `code\RestaurantOrderApp\src\backend`
